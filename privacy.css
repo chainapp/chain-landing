@@ -1,0 +1,35 @@
+h1 /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'LearningCurveProRegular', Arial, serif;
+}
+
+html {
+font-family: "HelveticaNeueLight", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+    background-color: #ee484c;
+}
+
+.modal-content {
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.ff-Home-footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .ff-Home-footer ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ff-Home-footer li {
+    display: inline-block;
+    font-size: 0.85rem;
+    margin-right: 3rem;
+  }
