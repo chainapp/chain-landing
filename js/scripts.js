@@ -12,6 +12,8 @@ $(document).ready(function() {
 $(window).load(function () {
 	$('header').addClass("animated fadeIn");
 	$('.carousel-iphone').addClass("animated fadeInLeft");
+	$('.navbar-default').css('display', 'block');
+	$('.navbar-default').addClass('fixed-to-top');
 });
 
 // Fixed navbar
@@ -19,14 +21,14 @@ $(window).scroll(function () {
 
 var scrollTop = $(window).scrollTop();
 
-	if (scrollTop > 200) {
+	// if (scrollTop >= 0) {
 		$('.navbar-default').css('display', 'block');
 		$('.navbar-default').addClass('fixed-to-top');
 			
-	} else if (scrollTop == 0)   {
+	// }// } else if (scrollTop == 0)   {
 	
-		$('.navbar-default').removeClass('fixed-to-top');
-	}
+	// 	$('.navbar-default').removeClass('fixed-to-top');
+	// }
 	
 	
 //animations	
