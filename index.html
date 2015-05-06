@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Facefight</title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<head>
+	<title>Facefight</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- CSS 
-        ================================================== -->
+    ================================================== -->
     <!-- Bootstrap 3-->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Google Fonts -->
@@ -15,273 +15,302 @@
     <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
     <!-- Template Styles -->
     <link href="css/style.css" rel="stylesheet" media="screen">
-      </head>
-  <body>
-	  
+</head>
+<body ng-app="landing">
+
 	  <!-- NAVBAR
-	      ================================================== -->
-	  <nav class="navbar navbar-default" role="navigation">
-	  	  <div class="container">
-			  <div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-			      <span class="sr-only">Toggle navigation</span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			    </button>
-			    
-			    <!--Replace text with your app name or logo image-->
-			    <a class="navbar-brand" href="#">Facefight</a>
-			  </div>
-			  <div class="collapse navbar-collapse navbar-ex1-collapse">
-			    <ul class="nav navbar-nav">
-			      <li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
-			      <li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
-			      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
-			      <li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
-			    </ul>
-			  </div>
-		  </div>
+	  ================================================== -->
+	  <nav class="navbar navbar-default" role="navigation" >
+	  	<div class="container">
+	  		<div class="navbar-header">
+	  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	  				<span class="sr-only">Toggle navigation</span>
+	  				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  			</button>
+
+	  			<!--Replace text with your app name or logo image-->
+	  			<a class="navbar-brand" href="#">Facefight</a>
+	  		</div>
+	  		<div class="collapse navbar-collapse navbar-ex1-collapse">
+	  			<ul class="nav navbar-nav">
+	  				<li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
+	  				<li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
+	  				<li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
+	  				<li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
+	  			</ul>
+	  		</div>
+	  	</div>
 	  </nav>
 	  
 	  
 	   <!-- HEADER
 	   ================================================== -->	  
-	  <header>
-		 <div class="container">
-			 <div class="row">
-				 <div class="col-md-6">
-					  <!-- <h1>Facefight</h1> -->
-					  <p class="lead" id="standstill" >stand still</p>
-					  
-					  <div class="carousel-iphone">
-					  	<div id="carousel-example-generic" class="carousel slide">
-					    
-					    <!-- Indicators -->
-					    <ol class="carousel-indicators">
-					      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					    </ol>
-					  
-					    <!-- Wrapper for slides -->
-					    <div class="carousel-inner">
-					      <div class="item active">
-					        <img src="img/screenshots/app-1.png" alt="App Screen 1">
-					      </div>
-					      <div class="item">
-					        <img src="img/screenshots/app-2.png" alt="App Screen 2">
-					      </div>
-					      <div class="item">
-					        <img src="img/screenshots/app-3.png" alt="App Screen 3">
-					      </div>
-					      
-					    </div>
-					  </div>
-					</div>
-				</div>	
-				<div class="col-md-6">
-					  <!-- <h1>Facefight</h1> -->
-					  <!-- <div class="row">
-						  <div class="col-md-12">
-							  <p class="detailtext">Plan your next trip in ten minutes!
-								Spending days to plan your trip? Don't know what you can do? Unsure about local transportation? 
-								Simply, an Itinerary planner in 4 simple steps.
-								Select from the endless possibilities at your travel destination and let TripBook settle the rest.
-								Online and Offline.
-								Sign up below to stay tuned for updates!
-							  </p>
-							</div>
-							<div class="col-md-12"> -->
-							<form class="detailtext form-inline" action="http://localhost:8081/subscribe" method="GET">
-							<p style="font-family: 'Sigmar One', sans-serif;">Plan your next trip in ten minutes!
-								Spending days to plan your trip? Don't know what you can do? Unsure about local transportation? 
-								Simply, an Itinerary planner in 4 simple steps.
-								Select from the endless possibilities at your travel destination and let TripBook settle the rest.
-								Online and Offline.
-								Sign up below to stay tuned for updates!
-							  </p>
-							  <div class="form-group">
-							    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-							  </div>
-							  <div class="form-group">
-							    <input type="email" class="form-control" id="mail" name="mail" placeholder="Email">
-							  </div>
-							  <button type="submit" class="btn btn-info">Subscribe</button>
-							</form>
+	   <header>
+	   	<div class="container">
+	   		<div class="row">
+	   			<div class="col-md-6">					  
+
+	   				<div class="carousel-iphone">
+	   					<div id="carousel-example-generic" class="carousel slide">
+
+	   						<!-- Indicators -->
+	   						<ol class="carousel-indicators">
+	   							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	   							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	   							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	   						</ol>
+
+	   						<!-- Wrapper for slides -->
+	   						<div class="carousel-inner">
+	   							<div class="item active">
+	   								<img src="img/screenshots/app-1.png" width="180px" height="300px" alt="App Screen 1">
+	   							</div>
+	   							<div class="item">
+	   								<img src="img/screenshots/app-2.png" width="180px" height="300px" alt="App Screen 2">
+	   							</div>
+	   							<div class="item">
+	   								<img src="img/screenshots/app-3.png" width="180px" height="300px" alt="App Screen 3">
+	   							</div>
+
+	   						</div>
+	   					</div>
+	   				</div>
+	   			</div>	
+	   			<div class="col-md-6" ng-controller="subscriberCtrl">
+	   				<form class="detailtext form-inline">
+	   					<h3>Fight your friends in a live video.</h3>
+	   					<p style="font-family: 'Sigmar One', sans-serif;" class="lead" id="oneruleonly">
+
+	   						One Rule Only :<br> <strong>The 1st who starts laughing looses the game</strong></p>
+
+	   						<div class="row">
+	   							<div class="col-md-12">
+	   								<p style="font-family: 'Sigmar One', sans-serif;color: #3a3a3a;">Coming soon ! </p>
+
+	   								<button type="button" class="app-store"></button>
+	   							</div>
+	   							<div class="col-md-12">
+	   								<p style="font-family: 'Sigmar One', sans-serif;color: #3a3a3a;">Sign up below to stay tuned for updates!</p>
+	   							</div>
+	   						</div>
+
+	   						<div class="form-group">
+	   							<input type="text" class="form-control" id="name" ng-model="name" name="name" placeholder="Name">
+	   						</div>
+	   						<div class="form-group">
+	   							<input type="email" class="form-control" id="mail" ng-model="mail" name="mail" placeholder="Email">
+	   						</div>
+	   						<button ng-click="subscribe()" class="btn btn-info btn-sub">Subscribe</button>
+	   					</form>
 							<!-- </div> 
 						</div>   -->
-				</div>
-			</div>    
-		</div>
-	 </header>
-	  
-	  
-	  <!-- PURCHASE
-	      ================================================== -->
-	  <section class="purchase">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-md-offset-2 col-md-8">
-					 <h1>Fight your friends in a live video.</h1>
-					 	    <p id="oneruleonly" class="lead">One Rule Only :<br> <strong>The 1st who starts laughing looses the game</strong></p>
-					 	    <button type="button" class="app-store"></button>	
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-	  
-	  
-	  <!-- PAYOFF 
-	      ================================================== -->
-	  <section class="payoff">
-		<div class="container">
-			  <div class="row">
-				  <div class="col-md-12">
-					  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h1>
-				  </div>
-			  </div>
-		  </div>	  
-	  </section>
-	  
-	  
-	  <!-- DETAILS 
-	      ================================================== -->
-	  <section class="detail">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div id="carousel-example-generic-2" class="carousel slide">
-										
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-					    <div class="item active">
-					      	<div class="row">
-					      		<div class="col-sm-12 col-md-offset-1 col-md-6">
-					      			<h1 class="detailtext" ><br>Calibrate your face.<br>Wait for your opponent to be ready.</h1>
-					      			<p class="detailtext2">Facefight <strong>analyzes faces</strong> and knows when both opponents are ready.<br>You can either fight <strong>a friend or a random person.</strong></p>
-					      		</div>
-					      		<div class="col-sm-12 col-md-5">
-					      			<div class="app-screenshot">
-					      				<img src="img/screenshots/app-1.png" class="img-responsive" alt="App Screen 1">
-					      			</div>
-					      		</div>
-					      	</div>
-					    </div>
-					    <div class="item">
-					    	<div class="row">
-					    		<div class="col-sm-12 col-md-offset-1 col-md-6">
-					    			<h1 class="detailtext"><br><br>3,2,1 ... <br><strong>Fight!</strong></h1>
-					    			<p class="detailtext2">After the countdouwn the fight begins.<br> Remember not to laugh, <strong>Facecoins</strong> are at stake.</p>
-					    		</div>
-					    		<div class="col-sm-12 col-md-5">
-					    			<div class="app-screenshot">
-					    				<img src="img/screenshots/app-2.png" class="img-responsive" alt="App Screen 2">
-					    			</div>
-					    		</div>
-					    	</div>
-						</div>
-					    <div class="item">
-					      <div class="row">
-					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
-					      		<h1 class="detailtext"><br>Hard to win?!<br><br>Use weapons of mass deztabilization.</h1>
-					      		<p class="detailtext2">Go to the <strong>Arsenal</strong> and find the weapons that will make your opponent<br><strong>loose control.</strong></p>
-					      	</div>
-					      	<div class="col-sm-12 col-md-5">
-					      		<div class="app-screenshot">
-					      			<img src="img/screenshots/app-3.png" class="img-responsive" alt="App Screen 3">
-					      		</div>
-					      	</div>
-					      </div>
-					    </div>
-					  </div>
-					
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-					  </ol>		
 					</div>
-				</div>
+				</div>    
 			</div>
-		</div>
-	</section>
-	
-	  
-	  <!-- FEATURES
-	      ================================================== -->
-	  <section class="features">
-		  <div class="container">
-			  <div class="row">
-				
-				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-like"></i></div>
-					  <h2>Quick &amp; Easy Facebook Sign Up</h2>
-				  </div>
-				
-				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-like"></i></div>
-					  <h2>Totally Free</h2>
-				  </div>
-				 
-				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-like"></i></div>
-					  <h2>Made with love and fun</h2>
-				  </div>
-				  
-			  </div>
-		  </div>
-	  </section>
-	  
-	
-	 <!-- SOCIAL
-	     ================================================== -->
-	  <section class="social">
-	  	<div class="container">
-	  		  <div class="row">
-	  			  <div class="col-md-12">
-	  			  	<h2>Connect with us</h2>
-	  			   	<a href="https://www.facebook.com/pages/Facefight/1556073201276412" target="_blank" class="icon-facebook"></a>
-	  			   	<a href="https://twitter.com/Face_Fight" target="_blank" class="icon-twitter"></a>
-	  			   	<a href="https://instagram.com/face_fight/" target="_blank" class="icon-instagram"></a>
-	  			   </div>
-	  		  </div>
-	  	  </div>	  
-	  </section>
-	  
-	
-	 <!-- GET IT 
-	     ================================================== -->
-	  <section class="get-it">
+			<!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+		</header>
+
+
+	  <!-- PURCHASE
+	  ================================================== -->
+	  <section class="purchase">
 	  	<div class="container">
 	  		<div class="row">
-	  			<div class="col-md-12">
-	  				<h1>Available soon on the App Store</h1>
-	  				<p class="lead">Check our latest news on any social platforms</p>
-	  				<button type="button" class="app-store"></button>
-	  			</div>
-	  			<div class="col-md-12">
-	  				<hr />
-		  			<ul>
-	                	<li><a href="mailto:doyoufacefight@gmail.com">Contact</a></li>
-	                	<li><a href="mailto:doyoufacefight@gmail.com">Press</a></li>
-	                	<li><a href="mailto:doyoufacefight@gmail.com">Support</a></li>
-	                	<li><a href="terms.html" target="_blank">Terms</a></li>
-	                	<li><a href="privacy.html" target="_blank">Privacy</a></li>
-                	</ul>
+	  			<div class="col-md-offset-2 col-md-8">
+	  				<h1>Fight your friends in a live video.</h1>
+	  				<p id="oneruleonly" class="lead">One Rule Only :<br> <strong>The 1st who starts laughing looses the game</strong></p>
+	  				<button type="button" class="app-store"></button>	
 	  			</div>
 	  		</div>
 	  	</div>
 	  </section>
 	  
+	  
+	  <!-- PAYOFF 
+	  ================================================== -->
+	  <section class="payoff">
+	  	<div class="container">
+	  		<div class="row">
+	  			<div class="col-md-12">
+	  				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h1>
+	  			</div>
+	  		</div>
+	  	</div>	  
+	  </section>
+	  
+	  
+	  <!-- DETAILS 
+	  ================================================== -->
+	  <section class="detail">
+	  	<div class="container">
+	  		<div class="row">
+	  			<div class="col-md-12">
+	  				<div id="carousel-example-generic-2" class="carousel slide">
+
+	  					<!-- Wrapper for slides -->
+	  					<div class="carousel-inner">
+	  						<div class="item active">
+	  							<div class="row">
+	  								<div class="col-sm-12 col-md-offset-1 col-md-6">
+	  									<h1 class="detailtext" ><br>Calibrate your face.<br>Wait for your opponent to be ready.</h1>
+	  									<p class="detailtext2">Facefight <strong>analyzes faces</strong> and knows when both opponents are ready.<br>You can either fight <strong>a friend or a random person.</strong></p>
+	  								</div>
+	  								<div class="col-sm-12 col-md-5">
+	  									<div class="app-screenshot">
+	  										<img src="img/screenshots/app-1.png" class="img-responsive" alt="App Screen 1">
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="item">
+	  							<div class="row">
+	  								<div class="col-sm-12 col-md-offset-1 col-md-6">
+	  									<h1 class="detailtext"><br><br>3,2,1 ... <br><strong>Fight!</strong></h1>
+	  									<p class="detailtext2">After the countdouwn the fight begins.<br> Remember not to laugh, <strong>Facecoins</strong> are at stake.</p>
+	  								</div>
+	  								<div class="col-sm-12 col-md-5">
+	  									<div class="app-screenshot">
+	  										<img src="img/screenshots/app-2.png" class="img-responsive" alt="App Screen 2">
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  						<div class="item">
+	  							<div class="row">
+	  								<div class="col-sm-12 col-md-offset-1 col-md-6">
+	  									<h1 class="detailtext"><br>Hard to win?!<br><br>Use weapons of mass deztabilization.</h1>
+	  									<p class="detailtext2">Go to the <strong>Arsenal</strong> and find the weapons that will make your opponent<br><strong>loose control.</strong></p>
+	  								</div>
+	  								<div class="col-sm-12 col-md-5">
+	  									<div class="app-screenshot">
+	  										<img src="img/screenshots/app-3.png" class="img-responsive" alt="App Screen 3">
+	  									</div>
+	  								</div>
+	  							</div>
+	  						</div>
+	  					</div>
+
+	  					<!-- Indicators -->
+	  					<ol class="carousel-indicators">
+	  						<li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+	  						<li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+	  						<li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+	  					</ol>		
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </section>
+
+	  
+	  <!-- FEATURES
+	  ================================================== -->
+	  <section class="features">
+	  	<div class="container">
+	  		<div class="row">
+
+	  			<div class="col-md-4">
+	  				<div class="circle"><i class="icon-facebook"></i></div>
+	  				<h2>Quick &amp; Easy Facebook Sign Up</h2>
+	  			</div>
+
+	  			<div class="col-md-4">
+	  				<div class="circle"><i class="icon-cloud"></i></div>
+	  				<h2>Totally Free</h2>
+	  			</div>
+
+	  			<div class="col-md-4">
+	  				<div class="circle"><i class="icon-like"></i></div>
+	  				<h2>Made with love and fun</h2>
+	  			</div>
+
+	  		</div>
+	  	</div>
+	  </section>
+	  
+
+	 <!-- SOCIAL
+	 ================================================== -->
+	 <section class="social">
+	 	<div class="container">
+	 		<div class="row">
+	 			<div class="col-md-12">
+	 				<h2>Connect with us</h2>
+	 				<a href="https://www.facebook.com/pages/Facefight/1556073201276412" target="_blank" class="icon-facebook"></a>
+	 				<a href="https://twitter.com/Face_Fight" target="_blank" class="icon-twitter"></a>
+	 				<a href="https://instagram.com/face_fight/" target="_blank" class="icon-instagram"></a>
+	 			</div>
+	 		</div>
+	 	</div>	  
+	 </section>
+
+
+	 <!-- GET IT 
+	 ================================================== -->
+	 <section class="get-it">
+	 	<div class="container">
+	 		<div class="row">
+	 			<div class="col-md-12">
+	 				<h1>Available soon on the App Store</h1>
+	 				<p class="lead">Check our latest news on any social platforms</p>
+	 				<button type="button" class="app-store"></button>
+	 			</div>
+	 			<div class="col-md-12">
+	 				<hr />
+	 				<ul>
+	 					<li><a href="mailto:doyoufacefight@gmail.com">Contact</a></li>
+	 					<li><a href="mailto:doyoufacefight@gmail.com">Press</a></li>
+	 					<li><a href="mailto:doyoufacefight@gmail.com">Support</a></li>
+	 					<li><a href="terms.html" target="_blank">Terms</a></li>
+	 					<li><a href="privacy.html" target="_blank">Privacy</a></li>
+	 				</ul>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </section>
+
 	 
 	 <!-- JAVASCRIPT
-	     ================================================== -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/animatescroll.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/retina-1.1.0.min.js"></script>
-  	
-</html>
+	 ================================================== -->
+	 <script src="js/jquery.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	 <script src="js/animatescroll.js"></script>
+	 <script src="js/scripts.js"></script>
+	 <script src="js/retina-1.1.0.min.js"></script>
+	<script src="js/notify.min.js"></script>
+    <!-- ANGULARJS
+    ================================================== -->
+    <script src="./js/angular/lib/angular.min.js"></script>
+    <script src="./js/angular/landing.js"></script>
+    <script src="./js/angular/controllers/subscriberCtrl.js"></script>
+    <script src="./js/angular/services/subscriberService.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".btn-sub").click(function(){
+				$(".btn-sub").notify("Facesubscription registered !", {className:"success",position:"top"});
+			});
+		});
+	</script>
+
+    </html>

@@ -17,6 +17,7 @@ var subscriberSchema = mongoose.Schema({
 
         name        : String,
         email     : String,
+        registrationDate : Date
     
 });
 
@@ -31,26 +32,12 @@ app.get('/subscribe',function(req,res){
     var name = req.param('name');
     var email = req.param('mail');
 
-    var newSubscriber = {name:name,email:email};
+    var newSubscriber = {name:name,email:email,registrationDate:new Date()};
 
     var subscriber = new SubscriberModel(newSubscriber);
     subscriber.save(function (err, addedMatch) {
         if (err) throw err;
-
-        smtpTransport.sendMail({
-           from: "Facefight <facefight@gmail.com>", // sender address
-           to: name+" <"+email+">", // comma separated list of receivers
-           subject: "Welcome to Facefight ✔", // Subject line
-           text: "Welcome to Facefight "+name+" ! Thanks for your subscription, stay tuned for news to come." // plaintext body
-        }, function(error, response){
-           if(error){
-               console.log(error);
-           }else{
-               console.log("Message sent: " + response.message);
-           }
-        });
-
-        res.redirect('/');
+        res.send('OK');
     });
 
 })
