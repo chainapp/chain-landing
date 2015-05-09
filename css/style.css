@@ -165,8 +165,8 @@ nav.navbar.fixed-to-top{
 /*-----------------------------------------------------------------------------------*/
 
 header{
-	padding: 140px 0px 0px 0px;
-	height: 680px;
+	padding: 140px 0px 100px 0px;
+	min-height: 680px;
 	background: url('../img/nepal.jpg');
 	background-color: white!important;
 	background-size: cover;
@@ -194,7 +194,7 @@ header .carousel-iphone{
 	width: 320px;
 	height: 672px;
 	background: url('../img/iphone-front.png') no-repeat;
-	background-size: 66%;
+	background-size: 100%;
 	
 }
 
@@ -235,6 +235,57 @@ header .carousel-indicators li {
 	cursor: pointer;
 }
 
+
+/*-----------------------------------------------------------------------------------*/
+/* HEADER SECTION
+/*-----------------------------------------------------------------------------------*/
+
+.header{
+	overflow: hidden;
+	padding: 100px 0px 100px 0px;
+	min-height: 200px;
+    background-color: #ee484c; 
+}
+
+.header .carousel-iphone{
+	margin-right: auto;
+	margin-left: auto;
+	width: 213px;
+	height: 448px;
+	background: url('../img/iphone-front.png') no-repeat;
+	background-size: 100%;
+	
+}
+
+.header .carousel {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 64px 0px 0px 18px;
+	width: 282px;
+}
+
+.header .carousel-indicators .active {
+	width: 15px;
+	height: 15px;
+	background: #444444;
+}
+
+.header .carousel-indicators {
+	bottom: -55px;
+	left: 110px;
+}
+
+.header .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #666666;
+	border-radius: 10px;
+	text-indent: -999px;
+	cursor: pointer;
+}
 /*-----------------------------------------------------------------------------------*/
 /* PURCHASE
 /*-----------------------------------------------------------------------------------*/

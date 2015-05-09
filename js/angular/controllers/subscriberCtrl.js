@@ -9,11 +9,11 @@ appControllers.controller('subscriberCtrl', ['$scope','$http','subscriberService
 		subscriberService.subscribeCall($scope.name,$scope.mail).then(function(res){
 
 			console.log(res);
-			$scope.name = "";
-			$scope.mail = "";
+			
 
 		});
-
+		$scope.name = null;
+		$scope.mail = null;
 	}
 
 
