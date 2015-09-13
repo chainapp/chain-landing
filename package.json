@@ -1,5 +1,9 @@
 {
-  "name": "AdminLTE",
+  "name": "Facefight-landing",
+  "main": "server.js",
+  "scripts": {
+      "start": "node server.js"
+    },
   "version": "2.0.3",
   "devDependencies": {
     "grunt": "~0.4.5",

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Facefight</title>
+	<title>Chain app is designed to easily create photo albums with your friends</title>
+    <meta name="description" content="Chain is a smartphone app designed to easily and quickly create mini photo albums with your friends. Choose a #, take the first picture and send it to your Facebook friends. Wait for them to respond. Once created, share your Chain on social networks." />
+    <meta name="keywords" content="app, mobile, photo, pictures, album, iPhone, Android, app, snapchat, instagram, friends, #"/>
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="robots" content="noindex,nofollow" />
+
+     
     <!-- CSS 
     ================================================== -->
     <!-- Bootstrap 3-->
@@ -12,8 +17,32 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:400,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
-    <!-- Template Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta property="al:ios:url" content="chainapp://" />
+    <meta property="al:ios:app_store_id" content="1001490452" />
+    <meta property="al:ios:app_name" content="Chain'" />  
+    <meta property="al:web:url" content="www.chainapp.me" />
+  
+    <!-- Template Styles --> 
     <link href="css/style.css" rel="stylesheet" media="screen">
 </head>
 <body ng-app="landing">
@@ -31,12 +60,12 @@
 	  			</button>
 
 	  			<!--Replace text with your app name or logo image-->
-	  			<a class="navbar-brand" href="#">Facefight</a>
+	  			<img  class="navbar-brand" href="#" src="img/LOGOCopy3.png" alt="Chain logo"/>
 	  		</div>
 	  		<div class="collapse navbar-collapse navbar-ex1-collapse">
 	  			<ul class="nav navbar-nav">
 	  				<li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
-	  				<li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
+	  				<li><a onclick="$('.detail').animatescroll({padding:71});">The App</a></li>
 	  				<li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
 	  				<li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
 	  			</ul>
@@ -47,7 +76,7 @@
 	  
 	   <!-- HEADER
 	   ================================================== -->	  
-	   <header>
+	   <section class="header">
 	   	<div class="container">
 	   		<div class="row">
 	   			<div class="col-md-6">					  
@@ -65,34 +94,31 @@
 	   						<!-- Wrapper for slides -->
 	   						<div class="carousel-inner">
 	   							<div class="item active">
-	   								<img src="img/screenshots/app-1.png" width="180px" height="300px" alt="App Screen 1">
+	   								<img src="img/screenshots/app-1.png" width="181px" height="300px" alt="App Screen 1">
 	   							</div>
-	   							<div class="item">
-	   								<img src="img/screenshots/app-2.png" width="180px" height="300px" alt="App Screen 2">
-	   							</div>
-	   							<div class="item">
-	   								<img src="img/screenshots/app-3.png" width="180px" height="300px" alt="App Screen 3">
-	   							</div>
-
 	   						</div>
 	   					</div>
 	   				</div>
 	   			</div>	
 	   			<div class="col-md-6" ng-controller="subscriberCtrl">
 	   				<form class="detailtext form-inline">
-	   					<h3>Fight your friends in a live video.</h3>
-	   					<p style="font-family: 'Sigmar One', sans-serif;" class="lead" id="oneruleonly">
-
-	   						One Rule Only :<br> <strong>The 1st who starts laughing looses the game</strong></p>
-
+                        <h3><span style="font-weight:bold">What's your mood?</span></br>Say it to your friends with <strong>fun pictures</strong>...</br>because it is worth a thousand words! </br> <span style="font-weight:bold">Will they follow?</span></h3>
 	   						<div class="row">
 	   							<div class="col-md-12">
-	   								<p style="font-family: 'Sigmar One', sans-serif;color: #3a3a3a;">Coming soon ! </p>
+	   								<p style="font-family:'Source Sans Pro', 'Josefin Sans', sans-serif;color: #3a3a3a;">Coming soon!</p>
 
-	   								<button type="button" class="app-store"></button>
+                                    <a href="http://www.apple.fr">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Available_on_the_App_Store_%28black%29_SVG.svg" alt="Apple Store link">
+                                    </a>
+                                    
+                                    <a href="http://www.google.fr">
+                                        <img src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" alt="Google Store link" height="40">
+                                    </a>
+                                    
+                                    
 	   							</div>
 	   							<div class="col-md-12">
-	   								<p style="font-family: 'Sigmar One', sans-serif;color: #3a3a3a;">Sign up below to stay tuned for updates!</p>
+	   								<p>Sign up below to stay tuned for updates!</p>
 	   							</div>
 	   						</div>
 
@@ -110,26 +136,8 @@
 				</div>    
 			</div>
 			<!-- Modal HTML -->
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Confirmation</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Do you want to save changes you made to document before closing?</p>
-                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-		</header>
-
+    
+		</section>
 
 	  <!-- PURCHASE
 	  ================================================== -->
@@ -137,14 +145,13 @@
 	  	<div class="container">
 	  		<div class="row">
 	  			<div class="col-md-offset-2 col-md-8">
-	  				<h1>Fight your friends in a live video.</h1>
-	  				<p id="oneruleonly" class="lead">One Rule Only :<br> <strong>The 1st who starts laughing looses the game</strong></p>
+	  				<p>Create funny Chains with your friends ;-)<p>
+	  				<p id="oneruleonly" class="lead">One Rule Only :<br> The 1st who starts laughing looses the game</p>
 	  				<button type="button" class="app-store"></button>	
 	  			</div>
 	  		</div>
 	  	</div>
 	  </section>
-	  
 	  
 	  <!-- PAYOFF 
 	  ================================================== -->
@@ -152,7 +159,7 @@
 	  	<div class="container">
 	  		<div class="row">
 	  			<div class="col-md-12">
-	  				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h1>
+	  				<p>The first app that lets you create a photo album with and away from your friends<p>
 	  			</div>
 	  		</div>
 	  	</div>	  
@@ -172,12 +179,12 @@
 	  						<div class="item active">
 	  							<div class="row">
 	  								<div class="col-sm-12 col-md-offset-1 col-md-6">
-	  									<h1 class="detailtext" ><br>Calibrate your face.<br>Wait for your opponent to be ready.</h1>
-	  									<p class="detailtext2">Facefight <strong>analyzes faces</strong> and knows when both opponents are ready.<br>You can either fight <strong>a friend or a random person.</strong></p>
+                                        <h1 class="detailtext" ><br>Wanna start a <strong>Chain</strong>?<br>Choose the perfect <span style="font-weight:bold">#</span><br> and take the 1st picture </h1>
+                                        <p class="detailtext2">A <span style="font-weight:bold">Chain</span> always comes with a <strong>#</strong> to indicate the theme of your Chain</p>
 	  								</div>
 	  								<div class="col-sm-12 col-md-5">
 	  									<div class="app-screenshot">
-	  										<img src="img/screenshots/app-1.png" class="img-responsive" alt="App Screen 1">
+	  										<img src="img/screenshots/app-2.png" class="img-responsive" alt="App Screen 1">
 	  									</div>
 	  								</div>
 	  							</div>
@@ -185,12 +192,12 @@
 	  						<div class="item">
 	  							<div class="row">
 	  								<div class="col-sm-12 col-md-offset-1 col-md-6">
-	  									<h1 class="detailtext"><br><br>3,2,1 ... <br><strong>Fight!</strong></h1>
-	  									<p class="detailtext2">After the countdouwn the fight begins.<br> Remember not to laugh, <strong>Facecoins</strong> are at stake.</p>
+                                        <h1 class="detailtext"><br><br>Select your <span style="font-weight:bold">friends</span> you<br>want  to send it to</h1>
+                                        <p class="detailtext2">You will only see your <span style="font-weight:bold">Facebook friends</span>, remind them to download the app if you want them to take part of your Chain</p>
 	  								</div>
 	  								<div class="col-sm-12 col-md-5">
 	  									<div class="app-screenshot">
-	  										<img src="img/screenshots/app-2.png" class="img-responsive" alt="App Screen 2">
+	  										<img src="img/screenshots/app-3.png" class="img-responsive" alt="App Screen 2">
 	  									</div>
 	  								</div>
 	  							</div>
@@ -198,12 +205,12 @@
 	  						<div class="item">
 	  							<div class="row">
 	  								<div class="col-sm-12 col-md-offset-1 col-md-6">
-	  									<h1 class="detailtext"><br>Hard to win?!<br><br>Use weapons of mass deztabilization.</h1>
-	  									<p class="detailtext2">Go to the <strong>Arsenal</strong> and find the weapons that will make your opponent<br><strong>loose control.</strong></p>
+	  									<h1 class="detailtext"><br>Let's <span style="font-weight:bold">share</span> the Chain you have just made!</h1>
+                                        <p class="detailtext2"># works basically with anything. Just let your <span style="font-weight:bold">creativity</span> flows!</p>
 	  								</div>
 	  								<div class="col-sm-12 col-md-5">
 	  									<div class="app-screenshot">
-	  										<img src="img/screenshots/app-3.png" class="img-responsive" alt="App Screen 3">
+	  										<img src="img/screenshots/app-1.png" class="img-responsive" alt="App Screen 3">
 	  									</div>
 	  								</div>
 	  							</div>
@@ -256,9 +263,9 @@
 	 		<div class="row">
 	 			<div class="col-md-12">
 	 				<h2>Connect with us</h2>
-	 				<a href="https://www.facebook.com/pages/Facefight/1556073201276412" target="_blank" class="icon-facebook"></a>
-	 				<a href="https://twitter.com/Face_Fight" target="_blank" class="icon-twitter"></a>
-	 				<a href="https://instagram.com/face_fight/" target="_blank" class="icon-instagram"></a>
+	 				<a href="https://www.facebook.com/pages/Chain/870580752995903" target="_blank" class="icon-facebook"></a>
+	 				<a href="https://twitter.com/chain_app" target="_blank" class="icon-twitter"></a>
+	 				<a href="https://instagram.com/chain.app/" target="_blank" class="icon-instagram"></a>
 	 			</div>
 	 		</div>
 	 	</div>	  
@@ -271,16 +278,24 @@
 	 	<div class="container">
 	 		<div class="row">
 	 			<div class="col-md-12">
-	 				<h1>Available soon on the App Store</h1>
+	 				<h1 style="color:white">Soon available on the App Store</h1>
 	 				<p class="lead">Check our latest news on any social platforms</p>
-	 				<button type="button" class="app-store"></button>
+                    
+	 				<a href="http://www.apple.fr">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Available_on_the_App_Store_%28black%29_SVG.svg" alt="Apple Store link">
+                                    </a>
+                                    
+                                    <a href="http://www.google.fr">
+                                        <img src="http://steverichey.github.io/google-play-badge-svg/img/en_get.svg" alt="Google Store link" height="40">
+                                    </a>
+                    
 	 			</div>
 	 			<div class="col-md-12">
 	 				<hr />
 	 				<ul>
-	 					<li><a href="mailto:doyoufacefight@gmail.com">Contact</a></li>
-	 					<li><a href="mailto:doyoufacefight@gmail.com">Press</a></li>
-	 					<li><a href="mailto:doyoufacefight@gmail.com">Support</a></li>
+	 					<li><a href="mailto:contact@chainapp.me">Contact</a></li>
+	 					<li><a href="mailto:press@chainapp.me">Press</a></li>
+	 					<li><a href="mailto:contact@chainapp.me">Support</a></li>
 	 					<li><a href="terms.html" target="_blank">Terms</a></li>
 	 					<li><a href="privacy.html" target="_blank">Privacy</a></li>
 	 				</ul>
@@ -288,9 +303,8 @@
 	 		</div>
 	 	</div>
 	 </section>
-
 	 
-	 <!-- JAVASCRIPT
+	 <!-- JAVASCRIPT   
 	 ================================================== -->
 	 <script src="js/jquery.js"></script>
 	 <script src="js/bootstrap.min.js"></script>

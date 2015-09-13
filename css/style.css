@@ -27,8 +27,8 @@ body{
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	color: #3a3a3a;
-	font-weight: 700;
-	font-family: "Sigmar One"; 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-family: "Source Sans Pro", "Josefin Sans"; 'Roboto Condensed', sans-serif;
 }
 
 p{
@@ -38,7 +38,7 @@ p{
 .lead{
 	font-weight: 250;
     color: white;
-    font-family: "Sigmar One", sans-serif;
+    font-family: "Source Sans Pro", "Josefin Sans", sans-serif;
 }
 
 button {
@@ -76,21 +76,17 @@ button {
 /*-----------------------------------------------------------------------------------*/
 
 /*---- Typography ----*/
-#standstill {
-    font-family: "Sigmar One";
-}
-
 header h1 {
-    color: darkslategrayda;
+    color: black;
 }
 .payoff h1,
 .details .carousel,
 .social a:hover{
-	color: #00d584;
+	color: #FFFFFF;
 }
 
 .features p{
-	color: #00d584;
+	color: #FFFFFF;
 ;
 }
 
@@ -101,7 +97,7 @@ strong {
 /*---- Background ----*/
 .features,
 .detail .carousel-indicators .active {
-	background: #00d584;
+	background: #FFFFFF;
 }
 	
 
@@ -121,6 +117,7 @@ nav.navbar{
 
 .navbar-nav{
 	float: right;
+    margin-top: 15px;
 }
 
 nav.navbar.fixed-to-top{
@@ -138,7 +135,7 @@ nav.navbar.fixed-to-top{
 .navbar-default .navbar-nav>li>a {
 	color: #aaa;
 	font-size: 1.2em;
-    font-family: "Sigmar One";
+    font-family: "Josefin Sans";
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
@@ -157,18 +154,19 @@ nav.navbar.fixed-to-top{
 	font-weight: 700;
 	font-size: 2em;
 	font-family: "Alegreya SC" ,'Roboto Condensed', sans-serif;
+    top:0px;
+    left:0px;
+    width: 130px;
 }
-
 
 /*-----------------------------------------------------------------------------------*/
 /* HEADER 
 /*-----------------------------------------------------------------------------------*/
 
 header{
-	padding: 140px 0px 0px 0px;
-	height: 680px;
-	background: url('../img/nepal.jpg');
-	background-color: white!important;
+	padding: 140px 0px 100px 0px;
+	min-height: 680px;
+	background-color: #00E1CD;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
@@ -194,16 +192,20 @@ header .carousel-iphone{
 	width: 320px;
 	height: 672px;
 	background: url('../img/iphone-front.png') no-repeat;
-	background-size: 66%;
+	background-size: 100%;
 	
 }
 
 header .detailtext {
-	margin-right: auto;
+	margin-right: aut;
 	margin-left: auto;
+    margin-top: auto;
 	width: 440px;
 	height: 672px;
-	margin-top: 0px;
+}
+
+.detailtext {
+    margin-top: 150px;
 }
 
 header .carousel {
@@ -226,39 +228,99 @@ header .carousel-indicators {
 
 header .carousel-indicators li {
 	display: inline-block;
-	margin: 1px;
+	margin: 0px;
 	width: 15px;
 	height: 15px;
-	border: 1px solid #666666;
+	border: 0px solid #666666;
 	border-radius: 10px;
 	text-indent: -999px;
 	cursor: pointer;
 }
+
+
+/*-----------------------------------------------------------------------------------*/
+/* HEADER SECTION
+/*-----------------------------------------------------------------------------------*/
+
+.header{
+	overflow: hidden;
+	padding: 100px 0px 100px 0px;
+	min-height: 200px;
+    background-color: #00E1CD; 
+}
+
+.header .carousel-iphone{
+	margin-right: auto;
+	margin-left: auto;
+    margin-top: 15%;
+	width: 213px;
+	height: 448px;
+	background: url('../img/iphone-front.png') no-repeat;
+	background-size: 100%;
+	
+}
+
+.header .carousel {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 64px 0px 0px 18px;
+	width: 282px;
+}
+
+.header .carousel-indicators .active {
+	width: 15px;
+	height: 15px;
+	background: #444444;
+}
+
+.header .carousel-indicators {
+    display: none;
+	bottom: -55px;
+	left: 110px;
+}
+
+.header .carousel-indicators li {
+	display: inline-block;
+	margin: 0px;
+	width: 15px;
+	height: 15px;
+	border: 0px solid #666666;
+	border-radius: 10px;
+	text-indent: -999px;
+	cursor: pointer;
+}    
 
 /*-----------------------------------------------------------------------------------*/
 /* PURCHASE
 /*-----------------------------------------------------------------------------------*/
 
 .purchase{
+    display: none;
 	overflow: hidden;
 	padding: 100px 0px 100px 0px;
 	min-height: 200px;
-    background-color: #00d584;
+    background-color: #FFFFFF;
 }
 
 button.app-store{
 	width: 152px;
 	height: 52px;
-	background: url(../img/badge-appstore.png) #3a3a3a no-repeat 0px 5px;
+	background: url("../img/Download_on_the_App_Store_Badge_US-UK_135x40.svg") #00E1CD no-repeat center;
     text-align: center;
-	color: white;
+
+}
+
+button.google-store{
+	width: 152px;
+	height: 52px;
+	background: url("https://developer.android.com/images/brand/en_app_rgb_wo_45.png") #00E1CD no-repeat center;
+    text-align: center;
+
 }
 
 #oneruleonly {
-    font-family: "Sigmar One"; 'Roboto Condensed', sans-serif;
-    border-color: #ee484c;
-    border: 4px solid;
-    border-radius: 7px;
+    font-family: "Source Sans Pro", "Josefin Sans"; 'Roboto Condensed', sans-serif;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -291,7 +353,7 @@ button.app-store{
 	overflow: hidden;
 	padding: 50px 0px 0px 0px;
 	min-height: 500px;
-    background-color: #ee484c; 
+    background-color: #FFFFFF; 
 }
 
 .detail .title{
@@ -312,7 +374,7 @@ button.app-store{
 }
 
 .detail p{
-	color:white;
+	color: #00E1CD;
 ;
 }
 
@@ -350,7 +412,7 @@ button.app-store{
 	padding-bottom: 8px;
 	width: 100%;
 	border-top: 1px solid #eee;
-	background: #ee484c;
+	background: #FFFFFF;
 }
 
 .detail .carousel-indicators .active {
@@ -358,6 +420,7 @@ button.app-store{
 	height: 5px;
 	border: none;
 	border-radius: 0px;
+    background:  #00E1CD;
 }
 
 .detail .carousel-indicators li {
@@ -367,10 +430,11 @@ button.app-store{
 	height: 5px;
 	border: none;
 	border-radius: 0px;
-	background: #eeeeee;
+	background: #A9A9A9;
 	text-indent: -999px;
 	cursor: pointer;
 }
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	FEATURES
@@ -380,15 +444,18 @@ button.app-store{
 	overflow: hidden;
 	padding: 150px 0px 150px 0px;
 	min-height: 400px;
-	color: #00d584;
+	background-color: #00E1CD;
 }
 
 .features p {
-	font-weight: 400;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 300;
+    font-size: 20px;
 }
 
 .features h2{
-	color: #ffffff;
+	color: #FFFFFF;
 	text-transform: uppercase;
 	font-weight: 300;
 }
@@ -400,14 +467,14 @@ button.app-store{
 	padding-top: 30px;
 	width: 150px;
 	height: 150px;
-	border: 2px solid #ffffff;
+	border: 2px solid #FFFFFF;
 	border-radius: 100%;
 	text-align: center;
 }
 
 .features span.glyphicon, .features i{
 	margin-top: 3px;
-	color: #ee484c;
+	color: #FFFFFF;
 	font-size: 5em;
 }
 
@@ -419,19 +486,21 @@ button.app-store{
 	overflow: hidden;
 	padding: 80px 0px 150px 0px;
 	min-height: 350px;
-	background: url('../img/sea.jpg');
+	background-color: #FFFFFF;
 	background-position: center top;
 	background-repeat: repeat-x;
 	color: white;
 }
 
 .social h2{
-	color: white;
+	color: #00E1CD;
+    margin: auto;
 }
 
 .social a {
-	margin-left: 10px;
-	color: #FFF;
+    margin: auto;
+    padding: inherit; 
+	color:  #00E1CD;
 	font-size: 5em;
 	transition: all 0.3s;
 }
@@ -449,13 +518,14 @@ button.app-store{
 .get-it{
 	padding: 100px 0px 160px 0px;
 	text-align: center;
+    background-color:  #00E1CD;
 }
 
 .get-it button.app-store{
 	width: 152px;
 	height: 52px;
-	background: url(../img/badge-appstore.png) #373737 no-repeat 0px 5px;
-	color: white;
+	background: url("../img/Download_on_the_App_Store_Badge_US-UK_135x40.svg") #373737 no-repeat 0px 5px;
+	color:  #00E1CD;
 }
 
 .get-it hr{
@@ -473,7 +543,7 @@ button.app-store{
 .get-it ul li{
 	display: inline-block;
 	margin-left:30px;
-    font-family: "Sigmar One";
+    font-family: "Josefin Sans";
 }
 
 .get-it ul li:first-child{
@@ -481,7 +551,7 @@ button.app-store{
 }
 
 .get-it ul li a{
-	color: #aaa;
+	color: #FFFFFF;
 	font-size: 1.2em;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -561,6 +631,7 @@ header, .social{
 	.detail .app-screenshot img{
 		margin-top: -12px;
 		padding-top: 0px;
+        padding-left: -1px;
 	}
 	
 	header{
@@ -585,8 +656,8 @@ header, .social{
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     /* Retina-specific stuff here */
     .purchasebutton.app-store, .get-it button.app-store{
-        background: url(../img/badge-appstore@2x.png) #3a3a3a no-repeat 0px 5px;
-        background-size: 98%;
+        background: url("../img/Download_on_the_App_Store_Badge_US-UK_135x40.svg") #00E1CD no-repeat 0px 5px;
+        background-size: 100%;
     	color: white;
     }
 }

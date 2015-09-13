@@ -5,7 +5,7 @@ this.subscribeCall = function(name,mail) {
   console.log('in subscriber service')
   $http({
     method: 'GET',
-    url: 'http://localhost:8081/subscribe?name='+name+'&mail='+mail,
+    url: 'http://facefight-landing.elasticbeanstalk.com:8081/subscribe?name='+name+'&mail='+mail,
     //url: 'http://lb.qlf-waas.priv.atos.fr:8068/getArret',
     headers: {'Content-type':'application/json'}
   }).
