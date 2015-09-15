@@ -13,6 +13,11 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 mongoose.connect('mongodb://52.17.127.121:27017/facefight');
 //mongoose.connect('mongodb://localhost:27017/facefight');
 app.use(express.static('./'));
+app.use(function(req, res, next) {
+      res.header("Access-Control-Allow-Origin", "*");
+      res.header("Access-Control-Allow-Headers", "X-Requested-With");
+      next();
+    });
 
 var subscriberSchema = mongoose.Schema({
 
