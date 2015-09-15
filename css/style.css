@@ -653,3 +653,24 @@ header, .social{
     	color: white;
     }
 }
+
+/* This gets Google to fall into place */
+.socialButtons {
+	font-size: 1px;
+}
+
+/* This gets Facebook to fall into place */
+.socialButtons iframe {
+	vertical-align: middle;
+}
+
+/* Set an optional width for your button wrappers */
+.socialButtons span {
+	display: inline-block;
+	width: 110px;
+}
+
+/* Adjust the widths individually if you like */
+.socialButtons .google {
+	width: 75px;
+}
